@@ -41,6 +41,7 @@ def do_something(sc):
             print(line)
             pass
     print("scanning over,total", count, "; did not response 200:", not_200)
+    img_not_200.write("n\---------------------------------------n\")
     f.close()
     img_not_200.close()
     s.enter(5, 1, do_something, (sc,))
